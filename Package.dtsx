@@ -11,8 +11,8 @@
   DTS:LocaleID="16393"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="1"
-  DTS:VersionGUID="{F2D33F07-9D5F-4243-9FB8-0FB875AB8E94}">
+  DTS:VersionBuild="2"
+  DTS:VersionGUID="{A34AD10D-BAFA-40A3-802F-00045C9FFE64}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -99,179 +99,6 @@
           version="1">
           <components>
             <component
-              refId="Package\Temporary DataFlow Task\Flat File Source"
-              componentClassID="Microsoft.FlatFileSource"
-              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
-              description="Flat File Source"
-              localeId="16393"
-              name="Flat File Source"
-              usesDispositions="true"
-              version="1">
-              <properties>
-                <property
-                  dataType="System.Boolean"
-                  description="Specifies whether zero-length columns are treated as null."
-                  name="RetainNulls">false</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
-                  name="FileNameColumnName"></property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\Temporary DataFlow Task\Flat File Source.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
-                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
-                  name="FlatFileConnection" />
-              </connections>
-              <outputs>
-                <output
-                  refId="Package\Temporary DataFlow Task\Flat File Source.Outputs[Flat File Source Output]"
-                  name="Flat File Source Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Temporary DataFlow Task\Flat File Source.Outputs[Flat File Source Output].Columns[LongDescription]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Temporary DataFlow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[LongDescription]"
-                      length="28"
-                      lineageId="Package\Temporary DataFlow Task\Flat File Source.Outputs[Flat File Source Output].Columns[LongDescription]"
-                      name="LongDescription"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Temporary DataFlow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Code]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Temporary DataFlow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Code]"
-                      length="6"
-                      lineageId="Package\Temporary DataFlow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Code]"
-                      name="Code"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Temporary DataFlow Task\Flat File Source.Outputs[Flat File Source Output].Columns[ShortDescription]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Temporary DataFlow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ShortDescription]"
-                      length="10"
-                      lineageId="Package\Temporary DataFlow Task\Flat File Source.Outputs[Flat File Source Output].Columns[ShortDescription]"
-                      name="ShortDescription"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Temporary DataFlow Task\Flat File Source.Outputs[Flat File Source Output].Columns[AbsenceCategoryId]"
-                      dataType="i1"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Temporary DataFlow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[AbsenceCategoryId]"
-                      lineageId="Package\Temporary DataFlow Task\Flat File Source.Outputs[Flat File Source Output].Columns[AbsenceCategoryId]"
-                      name="AbsenceCategoryId"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                  </outputColumns>
-                  <externalMetadataColumns
-                    isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\Temporary DataFlow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[LongDescription]"
-                      codePage="1252"
-                      dataType="str"
-                      length="28"
-                      name="LongDescription" />
-                    <externalMetadataColumn
-                      refId="Package\Temporary DataFlow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Code]"
-                      codePage="1252"
-                      dataType="str"
-                      length="6"
-                      name="Code" />
-                    <externalMetadataColumn
-                      refId="Package\Temporary DataFlow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ShortDescription]"
-                      codePage="1252"
-                      dataType="str"
-                      length="10"
-                      name="ShortDescription" />
-                    <externalMetadataColumn
-                      refId="Package\Temporary DataFlow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[AbsenceCategoryId]"
-                      dataType="i1"
-                      name="AbsenceCategoryId" />
-                  </externalMetadataColumns>
-                </output>
-                <output
-                  refId="Package\Temporary DataFlow Task\Flat File Source.Outputs[Flat File Source Error Output]"
-                  isErrorOut="true"
-                  name="Flat File Source Error Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Temporary DataFlow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
-                      codePage="1252"
-                      dataType="text"
-                      description="Flat File Source Error Output Column"
-                      lineageId="Package\Temporary DataFlow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
-                      name="Flat File Source Error Output Column" />
-                    <outputColumn
-                      refId="Package\Temporary DataFlow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Temporary DataFlow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\Temporary DataFlow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Temporary DataFlow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
               refId="Package\Temporary DataFlow Task\OLE DB Destination"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
@@ -350,7 +177,7 @@
                       cachedLength="28"
                       cachedName="LongDescription"
                       externalMetadataColumnId="Package\Temporary DataFlow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LongDescription]"
-                      lineageId="Package\Temporary DataFlow Task\Flat File Source.Outputs[Flat File Source Output].Columns[LongDescription]" />
+                      lineageId="Package\Temporary DataFlow Task\Sort.Outputs[Sort Output].Columns[LongDescription]" />
                     <inputColumn
                       refId="Package\Temporary DataFlow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Code]"
                       cachedCodepage="1252"
@@ -358,7 +185,7 @@
                       cachedLength="6"
                       cachedName="Code"
                       externalMetadataColumnId="Package\Temporary DataFlow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Code]"
-                      lineageId="Package\Temporary DataFlow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Code]" />
+                      lineageId="Package\Temporary DataFlow Task\Sort.Outputs[Sort Output].Columns[Code]" />
                     <inputColumn
                       refId="Package\Temporary DataFlow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ShortDescription]"
                       cachedCodepage="1252"
@@ -366,13 +193,14 @@
                       cachedLength="10"
                       cachedName="ShortDescription"
                       externalMetadataColumnId="Package\Temporary DataFlow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ShortDescription]"
-                      lineageId="Package\Temporary DataFlow Task\Flat File Source.Outputs[Flat File Source Output].Columns[ShortDescription]" />
+                      lineageId="Package\Temporary DataFlow Task\Sort.Outputs[Sort Output].Columns[ShortDescription]" />
                     <inputColumn
                       refId="Package\Temporary DataFlow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[AbsenceCategoryId]"
                       cachedDataType="i1"
                       cachedName="AbsenceCategoryId"
+                      cachedSortKeyPosition="1"
                       externalMetadataColumnId="Package\Temporary DataFlow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AbsenceCategoryId]"
-                      lineageId="Package\Temporary DataFlow Task\Flat File Source.Outputs[Flat File Source Output].Columns[AbsenceCategoryId]" />
+                      lineageId="Package\Temporary DataFlow Task\Sort.Outputs[Sort Output].Columns[AbsenceCategoryId]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -426,13 +254,358 @@
                 </output>
               </outputs>
             </component>
+            <component
+              refId="Package\Temporary DataFlow Task\Read csv file"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="16393"
+              name="Read csv file"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Temporary DataFlow Task\Read csv file.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Temporary DataFlow Task\Read csv file.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Temporary DataFlow Task\Read csv file.Outputs[Flat File Source Output].Columns[LongDescription]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Temporary DataFlow Task\Read csv file.Outputs[Flat File Source Output].ExternalColumns[LongDescription]"
+                      length="28"
+                      lineageId="Package\Temporary DataFlow Task\Read csv file.Outputs[Flat File Source Output].Columns[LongDescription]"
+                      name="LongDescription"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Temporary DataFlow Task\Read csv file.Outputs[Flat File Source Output].Columns[Code]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Temporary DataFlow Task\Read csv file.Outputs[Flat File Source Output].ExternalColumns[Code]"
+                      length="6"
+                      lineageId="Package\Temporary DataFlow Task\Read csv file.Outputs[Flat File Source Output].Columns[Code]"
+                      name="Code"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Temporary DataFlow Task\Read csv file.Outputs[Flat File Source Output].Columns[ShortDescription]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Temporary DataFlow Task\Read csv file.Outputs[Flat File Source Output].ExternalColumns[ShortDescription]"
+                      length="10"
+                      lineageId="Package\Temporary DataFlow Task\Read csv file.Outputs[Flat File Source Output].Columns[ShortDescription]"
+                      name="ShortDescription"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Temporary DataFlow Task\Read csv file.Outputs[Flat File Source Output].Columns[AbsenceCategoryId]"
+                      dataType="i1"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Temporary DataFlow Task\Read csv file.Outputs[Flat File Source Output].ExternalColumns[AbsenceCategoryId]"
+                      lineageId="Package\Temporary DataFlow Task\Read csv file.Outputs[Flat File Source Output].Columns[AbsenceCategoryId]"
+                      name="AbsenceCategoryId"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Temporary DataFlow Task\Read csv file.Outputs[Flat File Source Output].ExternalColumns[LongDescription]"
+                      codePage="1252"
+                      dataType="str"
+                      length="28"
+                      name="LongDescription" />
+                    <externalMetadataColumn
+                      refId="Package\Temporary DataFlow Task\Read csv file.Outputs[Flat File Source Output].ExternalColumns[Code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="6"
+                      name="Code" />
+                    <externalMetadataColumn
+                      refId="Package\Temporary DataFlow Task\Read csv file.Outputs[Flat File Source Output].ExternalColumns[ShortDescription]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="ShortDescription" />
+                    <externalMetadataColumn
+                      refId="Package\Temporary DataFlow Task\Read csv file.Outputs[Flat File Source Output].ExternalColumns[AbsenceCategoryId]"
+                      dataType="i1"
+                      name="AbsenceCategoryId" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Temporary DataFlow Task\Read csv file.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Temporary DataFlow Task\Read csv file.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Temporary DataFlow Task\Read csv file.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Temporary DataFlow Task\Read csv file.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Temporary DataFlow Task\Read csv file.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Temporary DataFlow Task\Read csv file.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Temporary DataFlow Task\Read csv file.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Temporary DataFlow Task\Sort"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
+              name="Sort"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
+                  name="EliminateDuplicates">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of threads to use for sorting."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Temporary DataFlow Task\Sort.Inputs[Sort Input]"
+                  name="Sort Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Temporary DataFlow Task\Sort.Inputs[Sort Input].Columns[LongDescription]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="28"
+                      cachedName="LongDescription"
+                      lineageId="Package\Temporary DataFlow Task\Read csv file.Outputs[Flat File Source Output].Columns[LongDescription]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Temporary DataFlow Task\Sort.Inputs[Sort Input].Columns[Code]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="6"
+                      cachedName="Code"
+                      lineageId="Package\Temporary DataFlow Task\Read csv file.Outputs[Flat File Source Output].Columns[Code]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Temporary DataFlow Task\Sort.Inputs[Sort Input].Columns[ShortDescription]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedName="ShortDescription"
+                      lineageId="Package\Temporary DataFlow Task\Read csv file.Outputs[Flat File Source Output].Columns[ShortDescription]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Temporary DataFlow Task\Sort.Inputs[Sort Input].Columns[AbsenceCategoryId]"
+                      cachedDataType="i1"
+                      cachedName="AbsenceCategoryId"
+                      lineageId="Package\Temporary DataFlow Task\Read csv file.Outputs[Flat File Source Output].Columns[AbsenceCategoryId]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Temporary DataFlow Task\Sort.Outputs[Sort Output]"
+                  isSorted="true"
+                  name="Sort Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Temporary DataFlow Task\Sort.Outputs[Sort Output].Columns[LongDescription]"
+                      codePage="1252"
+                      dataType="str"
+                      length="28"
+                      lineageId="Package\Temporary DataFlow Task\Sort.Outputs[Sort Output].Columns[LongDescription]"
+                      name="LongDescription">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Temporary DataFlow Task\Read csv file.Outputs[Flat File Source Output].Columns[LongDescription]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Temporary DataFlow Task\Sort.Outputs[Sort Output].Columns[Code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="6"
+                      lineageId="Package\Temporary DataFlow Task\Sort.Outputs[Sort Output].Columns[Code]"
+                      name="Code">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Temporary DataFlow Task\Read csv file.Outputs[Flat File Source Output].Columns[Code]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Temporary DataFlow Task\Sort.Outputs[Sort Output].Columns[ShortDescription]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      lineageId="Package\Temporary DataFlow Task\Sort.Outputs[Sort Output].Columns[ShortDescription]"
+                      name="ShortDescription">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Temporary DataFlow Task\Read csv file.Outputs[Flat File Source Output].Columns[ShortDescription]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Temporary DataFlow Task\Sort.Outputs[Sort Output].Columns[AbsenceCategoryId]"
+                      dataType="i1"
+                      lineageId="Package\Temporary DataFlow Task\Sort.Outputs[Sort Output].Columns[AbsenceCategoryId]"
+                      name="AbsenceCategoryId"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Temporary DataFlow Task\Read csv file.Outputs[Flat File Source Output].Columns[AbsenceCategoryId]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
           </components>
           <paths>
             <path
               refId="Package\Temporary DataFlow Task.Paths[Flat File Source Output]"
-              endId="Package\Temporary DataFlow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              endId="Package\Temporary DataFlow Task\Sort.Inputs[Sort Input]"
               name="Flat File Source Output"
-              startId="Package\Temporary DataFlow Task\Flat File Source.Outputs[Flat File Source Output]" />
+              startId="Package\Temporary DataFlow Task\Read csv file.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\Temporary DataFlow Task.Paths[Sort Output]"
+              endId="Package\Temporary DataFlow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Sort Output"
+              startId="Package\Temporary DataFlow Task\Sort.Outputs[Sort Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -461,41 +634,67 @@
     design-time-name="Package\Temporary DataFlow Task">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="150.4,41.6"
-          Id="Package\Temporary DataFlow Task\Flat File Source"
-          TopLeft="158.857145562464,74.6352951643789" />
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="170.4,41.6"
           Id="Package\Temporary DataFlow Task\OLE DB Destination"
-          TopLeft="121.714287787068,163.952943475849" />
+          TopLeft="47.4285722362755,220.235297206364" />
+        <NodeLayout
+          Size="137.6,41.6"
+          Id="Package\Temporary DataFlow Task\Read csv file"
+          TopLeft="42.2857150058359,25.082353292947" />
+        <NodeLayout
+          Size="97.6,41.6"
+          Id="Package\Temporary DataFlow Task\Sort"
+          TopLeft="76.5714298754322,133.976472467205" />
         <EdgeLayout
           Id="Package\Temporary DataFlow Task.Paths[Flat File Source Output]"
-          TopLeft="234.057145562464,116.235295164379">
+          TopLeft="111.085715005836,66.682353292947">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-27.1428577753962,47.7176483114698"
+              EndConnector="14.2857148695963,67.2941191742577"
               Start="0,0"
-              End="-27.1428577753962,40.2176483114698">
+              End="14.2857148695963,59.7941191742577">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,19.8588241557349" />
+                    End="0,29.6470595871289" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,19.8588241557349"
-                    Point2="0,23.8588241557349"
-                    Point3="-4,23.8588241557349" />
+                    Point1="0,29.6470595871289"
+                    Point2="0,33.6470595871289"
+                    Point3="4,33.6470595871289" />
                   <mssgle:LineSegment
-                    End="-23.1428577753962,23.8588241557349" />
+                    End="10.2857148695963,33.6470595871289" />
                   <mssgle:CubicBezierSegment
-                    Point1="-23.1428577753962,23.8588241557349"
-                    Point2="-27.1428577753962,23.8588241557349"
-                    Point3="-27.1428577753962,27.8588241557349" />
+                    Point1="10.2857148695963,33.6470595871289"
+                    Point2="14.2857148695963,33.6470595871289"
+                    Point3="14.2857148695963,37.6470595871289" />
                   <mssgle:LineSegment
-                    End="-27.1428577753962,40.2176483114698" />
+                    End="14.2857148695963,59.7941191742577" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Temporary DataFlow Task.Paths[Sort Output]"
+          TopLeft="129.000001055854,175.576472467205">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,44.6588247391596"
+              Start="0,0"
+              End="0,37.1588247391596">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,37.1588247391596" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
